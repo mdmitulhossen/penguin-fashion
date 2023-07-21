@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin-Fashion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn{
+                @apply flex items-center gap-2 border-0 rounded-md px-6 py-1 bg-[#85A019] hover:bg-[#5b6e0f] text-white duration-300 font-semibold
+            }
+        }
+      </style>
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'roboto': ['Roboto', 'sans-serif'],
+                },
+                screens: {
+                    'sm': '576px',
+                    // => @media (min-width: 576px) { ... }
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                    '2xl': '1400px',
+                    // => @media (min-width: 1536px) { ... }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-roboto">
+    <header class="w-full px-4 sm:px-12 md:px-4 lg:px-12 pt-6  bg-[#FFFBF0] pb-12">
+        <nav class="flex justify-between items-center 2xl:max-w-[1440px] mx-auto">
+            <div class="w-6/12 sm:w-8/12 md:w-5/12">
+                <img class="w-full" src="./icons/logo.png" alt="">
+            </div>
+            <div class="hidden md:block space-x-4 lg:space-x-8 xl:space-x-16 font-medium text-lg">
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">About us</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                        d="M5 16.25C5.69036 16.25 6.25 15.6904 6.25 15C6.25 14.3096 5.69036 13.75 5 13.75C4.30964 13.75 3.75 14.3096 3.75 15C3.75 15.6904 4.30964 16.25 5 16.25Z"
+                        fill="black" />
+                    <path
+                        d="M25.075 13.75H9.925C9.27607 13.75 8.75 14.2761 8.75 14.925V15.075C8.75 15.7239 9.27607 16.25 9.925 16.25H25.075C25.7239 16.25 26.25 15.7239 26.25 15.075V14.925C26.25 14.2761 25.7239 13.75 25.075 13.75Z"
+                        fill="black" />
+                    <path
+                        d="M25.075 20H4.925C4.27607 20 3.75 20.5261 3.75 21.175V21.325C3.75 21.9739 4.27607 22.5 4.925 22.5H25.075C25.7239 22.5 26.25 21.9739 26.25 21.325V21.175C26.25 20.5261 25.7239 20 25.075 20Z"
+                        fill="black" />
+                    <path
+                        d="M25.075 7.5H4.925C4.27607 7.5 3.75 8.02607 3.75 8.675V8.825C3.75 9.47393 4.27607 10 4.925 10H25.075C25.7239 10 26.25 9.47393 26.25 8.825V8.675C26.25 8.02607 25.7239 7.5 25.075 7.5Z"
+                        fill="black" />
+                </svg>
+            </div>
+        </nav>
+
+        <!-- header banner -->
+        <div class="w-full 2xl:max-w-[1440px] mx-auto mt-10">
+            <div class="md:flex items-center justify-between">
+                <div class="text-center md:text-left">
+                    <h2 class="font-bold text-[35px] sm:text-[40px] lg:text-[55px] xl:text-[60px] 2xl:text-[75px] uppercase">
+                        <span class="text-[#FABE4C]">
+                            Be the Penguins
+                        </span> <br> of Winter
+                    </h2>
+                    <p class="text-[#3E3E3E] mt-3 xl:text-xl">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.
+                    </p>
+                    <button class="btn mt-4 mx-auto md:mx-0 xl:py-5 xl:px-10 xl:text-3xl">
+                        <img class="h-10 w-10" src="./icons/shopping-cart 1.png" alt="">
+                        Buy Now
+                    </button>
+                </div>
+                <div class="mt-10 md:mt-0 w-full md:w-1/2 ">
+                <img class="w-full object-cover sm:w-[90%] lg:max-w-[650px] mx-auto" src="./images/model.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
