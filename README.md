@@ -1,5 +1,5 @@
 # penguin-fashion
-Fully responsive
-Uses:: tailwind CSS
+Fully responsive <br>
+<b>Uses:: tailwind CSS</b>
 
 Live Link:https://mdmitulhossen.github.io/penguin-fashion/
